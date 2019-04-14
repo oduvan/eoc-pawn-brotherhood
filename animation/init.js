@@ -1,6 +1,6 @@
 //Dont change it
 requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
-    function (extIO, $, TableComponent) {
+    function (extIO, $, r) {
 
         function ChessCanvas(dom) {
 
@@ -28,7 +28,7 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
 
 
             var size = padding * 2 + cell * 9;
-            var paper = Raphael(dom, size, size);
+            var paper = r.Raphael(dom, size, size);
 
             var figSet = paper.set();
 
