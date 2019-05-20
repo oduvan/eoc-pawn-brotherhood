@@ -1,13 +1,15 @@
 "use strict";
 
-function safePawns(data) {
+export function safePawns(data: string[]): number {
     return 0
 }
 
-var assert = require('assert');
+import * as assert from 'assert';
 
-if (!global.is_checking) {
-    assert.equal(safePawns(["b4", "d4", "f4", "c3", "e3", "g5", "d2"]), 6, "First");
-    assert.equal(safePawns(["b4", "c4", "d4", "e4", "f4", "g4", "e5"]), 1, "Second");
-    console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
-}
+console.log('Example:')
+console.log(safePawns(["b4", "d4", "f4", "c3", "e3", "g5", "d2"]))
+
+assert.equal(safePawns(["b4", "d4", "f4", "c3", "e3", "g5", "d2"]), 6, "First");
+assert.equal(safePawns(["b4", "c4", "d4", "e4", "f4", "g4", "e5"]), 1, "Second");
+console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
+
